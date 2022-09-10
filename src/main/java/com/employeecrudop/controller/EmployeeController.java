@@ -13,7 +13,7 @@ import java.util.*;
 
 @RestController
 public class EmployeeController {
-
+// This is the controller which handles the all rest api related to employee
    @Autowired
     CacheManager cacheManager;
     @Autowired
@@ -26,6 +26,7 @@ public class EmployeeController {
 
     @GetMapping ("/emp/{name}")
     public String Greet(@PathVariable String name){
+        // This is a real time greeting function
         String greetings;
         Calendar today=Calendar.getInstance();
         int time=today.get(Calendar.HOUR_OF_DAY);
